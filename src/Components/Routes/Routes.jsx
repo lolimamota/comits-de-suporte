@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Agendamento from "../Agendamento/Agenda.jsx";
 import Cadastro from '../Cadastro/Cadastrar.jsx';
-import Calendario from '../Calendario/Calendar.jsx';
+import Calendario from '../Calendário/Calendar.jsx';
 import Carregamento from '../Carregamento/Loadpage.jsx';
 import Confirmar from '../Confirmado/Confirmar.jsx';
 import Erropage from '../Erro/ErroAgenda.jsx';
