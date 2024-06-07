@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
 
 import PageLogin from '../Login/PageLogin.jsx'
 
@@ -17,21 +18,21 @@ flex-direction: column;
 font-size: .6rem;
 `;
 
-const Button = styled.button`
+const ImgBtn = styled.img`
 width: 50px;
 height: 50px;
 `;
 
-const ImgBtn = styled.button`
-`;
-
 function Loadpage() {
+  let navigate = useNavigate();
+  const handleClickLogin = () => navigate("/Login");
+
   return (
     <Divisor>
         <img src={Logo} alt="Logo que remete a um simbolo de coração" />
         <h1>Sua saúde na palma da sua mão!</h1>
 
-        <Button onClick={PageLogin}><ImgBtn src={ChargeIcon} alt="imagem circular de carregamento" /></Button>
+      <ImgBtn src={ChargeIcon} alt="imagem circular de carregamento" onClick={()=>handleClickLogin()}/>
     </Divisor>
   )
 }
