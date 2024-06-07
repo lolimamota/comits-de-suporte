@@ -12,14 +12,23 @@ import PageLogin from "../Login/PageLogin.jsx";
 import Pagamentos from '../Pagamentos/Pagar.jsx';
 import Revisar from '../Revisao/RevisarInfo.jsx';
 
+import styled from 'styled-components';
+
+const Nav = styled.nav`
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: .8rem;
+padding-top: 1rem;
+`;
 export default function Router(){
     return(
         <BrowserRouter>
-        <nav>
+        <Nav>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/Agendamento">Agendamentos</Link></li>
             <li><Link to="/FAQ">Dúvidas Frequentes</Link></li>
-        </nav>
+        </Nav>
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/Agendamento' element={<Agendamento/>}/>
