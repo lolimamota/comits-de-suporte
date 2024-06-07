@@ -17,7 +17,7 @@ export default function Router(){
         <BrowserRouter>
         <nav>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/Agendamentos">Agendamentos</Link></li>
+            <li><Link to="/Agendamento">Agendamentos</Link></li>
             <li><Link to="/FAQ">Dúvidas Frequentes</Link></li>
         </nav>
         <Routes>
