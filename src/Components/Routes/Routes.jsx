@@ -16,10 +16,23 @@ export default function Router(){
     return(
         <BrowserRouter>
         <nav>
-            <li><Link to="/"></Link></li>
-            <li></li>
-            <li></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Agendamentos">Agendamentos</Link></li>
+            <li><Link to="/FAQ">Dúvidas Frequentes</Link></li>
         </nav>
+        <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/Agendamento' element={<Agendamento/>}/>
+            <Route path='/Cadastro' element={<Cadastro/>}/>
+            <Route path='/Calendario' element={<Calendario/>}/>
+            <Route path='/Carregamento' element={<Carregamento/>}/>
+            <Route path='/Confirmar' element={<Confirmar/>}/>
+            <Route path='/Erropage' element={<Erropage/>}/>
+            <Route path='/FAQ' element={<FAQ/>}/>
+            <Route path='/Pagelogin' element={<PageLogin/>}/>
+            <Route path='/Pagamentos' element={<Pagamentos/>}/>
+            <Route path='/Revisar' element={<Revisar/>}/>
+        </Routes>
         </BrowserRouter>
     )
 }
