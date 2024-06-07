@@ -1,9 +1,18 @@
 import React from 'react'
-
-function Homepage() {
+import Logo from './Images/logomenor.png'
+const FontAwesomeIcon =
+function PageLogin() {
   return (
-    <div>Homepage</div>
+    <>
+    <img src={Logo} alt="Logo que remete a um simbolo de coração"/>
+    <h2>Login</h2>
+    <form>
+      <label htmlFor="Email">Email:</label>
+      <FontAwesomeIcon icon="fa-regular fa-user" />
+      <input type="text" placeholder="Digite seu email"/>
+    </form>
+    </>
   )
 }
 
-export default Homepage
+export default PageLogin

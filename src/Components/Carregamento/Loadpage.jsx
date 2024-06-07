@@ -24,7 +24,7 @@ height: 50px;
 
 function Loadpage() {
   let navigate = useNavigate();
-  const handleClickLogin = () => navigate("/PageLogin");
+  const handleClickLogin = () => navigate("/Homepage");
 
   return (
     <Divisor>

@@ -8,7 +8,6 @@ import Confirmar from '../Confirmado/Confirmar.jsx';
 import Erropage from '../Erro/ErroAgenda.jsx';
 import FAQ from '../FAQ/Duvidas.jsx';
 import Home from '../Home/Homepage.jsx';
-import PageLogin from "../Login/PageLogin.jsx";
 import Pagamentos from '../Pagamentos/Pagar.jsx';
 import Revisar from '../Revisao/RevisarInfo.jsx';
 
@@ -38,7 +37,6 @@ export default function Router(){
             <Route path='/Confirmar' element={<Confirmar/>}/>
             <Route path='/Erropage' element={<Erropage/>}/>
             <Route path='/FAQ' element={<FAQ/>}/>
-            <Route path='/Pagelogin' element={<PageLogin/>}/>
             <Route path='/Pagamentos' element={<Pagamentos/>}/>
             <Route path='/Revisar' element={<Revisar/>}/>
         </Routes>
