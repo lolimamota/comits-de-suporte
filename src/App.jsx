@@ -1,6 +1,5 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Carregamento from './Components/Carregamento/Loadpage.jsx'
 import Routes from './Components/Routes/Routes.jsx';
 
 
@@ -20,7 +19,6 @@ function App() {
   return (
     <>
     <GlobalStyle/>
-    <Carregamento/>
     <Routes/>
     </>
   )

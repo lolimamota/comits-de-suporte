@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 
-import PageLogin from '../Login/PageLogin.jsx'
 
 //IMPORT DAS IMAGENS
 import Logo from './Images/logo_core.png'
@@ -25,7 +24,7 @@ height: 50px;
 
 function Loadpage() {
   let navigate = useNavigate();
-  const handleClickLogin = () => navigate("/Login");
+  const handleClickLogin = () => navigate("/Loginpage");
 
   return (
     <Divisor>
